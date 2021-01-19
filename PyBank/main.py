@@ -3,9 +3,9 @@ import os
 import csv
 
 #2. Set csv path
-Pybankcsv = os.path.join("Resources", "budget_data.csv")
+pybankcsv = os.path.join("Resources", "budget_data.csv")
 
-#3. Initialize variables
+#3. Set initial variables
 count = 0
 net_profit_loss = 0
 current_month_profit_loss = 0
@@ -17,7 +17,7 @@ profit_loss_changes = []
 date = []
 
 #5. Open the csv
-with open(Pybankcsv) as csvfile:
+with open(pybankcsv) as csvfile:
     csvreader = csv.reader(csvfile, delimiter=",")
     csv_header = next(csvreader)
 
