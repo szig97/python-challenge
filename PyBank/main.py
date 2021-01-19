@@ -62,7 +62,7 @@ with open(Pybankcsv) as csvfile:
     print(f"Greatest Increase in Profits: {increase_date} (${highest_change})")
     print(f"Greatest Decrease in Profits: {decrease_date} (${lowest_change})")
 
-#13. Export the data to a text file
+#12. Export the data to a text file
 financial_analysis = os.path.join("Analysis", "financial_analysis.txt")
 with open(financial_analysis, "w") as outfile:
     outfile.write("Financial Analysis\n")
